@@ -30,6 +30,7 @@ A simplified, real-time streaming pipeline for tracking advertising campaign per
 
 ### **Technical Concepts**
 - **[Flink & Iceberg Concepts](flink_iceberg_concepts.md)**: Core concepts and best practices
+- **[Superset Dashboard Guide](superset_dashboard_guide.md)**: Dashboard setup and configuration
 
 ## 🚀 **Quick Start**
 
@@ -49,9 +50,15 @@ A simplified, real-time streaming pipeline for tracking advertising campaign per
    python src/kafka_setup.py
    ```
 
-4. **View Dashboard**
+4. **Setup Dashboard**
+   ```bash
+   python src/superset/simple_dashboard_setup.py
+   ```
+
+5. **View Dashboard**
    - Access Superset at http://localhost:8088
    - Default credentials: admin/admin
+   - Follow setup guide in docs/superset_dashboard_guide.md
 
 ## 📁 **Project Structure**
 
@@ -60,6 +67,7 @@ ads-campaign-metric/
 ├── src/
 │   ├── kafka/          # Kafka producers and consumers
 │   ├── flink/          # Flink streaming pipeline
+│   ├── superset/       # Superset dashboard setup
 │   └── kafka_setup.py
 ├── config/             # Configuration files
 ├── docs/               # Documentation

@@ -46,7 +46,7 @@ A simplified, real-time streaming pipeline for tracking advertising campaign per
 
 3. **Run Pipeline**
    ```bash
-   python src/simple_kafka_setup.py
+   python src/kafka_setup.py
    ```
 
 4. **View Dashboard**
@@ -60,7 +60,7 @@ ads-campaign-metric/
 ├── src/
 │   ├── kafka/          # Kafka producers and consumers
 │   ├── flink/          # Flink streaming pipeline
-│   └── simple_kafka_setup.py
+│   └── kafka_setup.py
 ├── config/             # Configuration files
 ├── docs/               # Documentation
 ├── tests/              # Test files
