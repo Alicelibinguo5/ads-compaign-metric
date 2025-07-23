@@ -2,7 +2,7 @@
 
 ## 🎯 **Project Overview**
 
-A simplified, real-time streaming pipeline for tracking advertising campaign performance metrics using Apache Kafka, Flink, and Iceberg.
+A real-time streaming pipeline for tracking advertising campaign performance metrics using Apache Kafka, Flink, and Iceberg.
 
 ## 📊 **Core Metrics**
 
@@ -10,7 +10,7 @@ A simplified, real-time streaming pipeline for tracking advertising campaign per
 - **CVR (Conversion Rate)**: Percentage of clicks that result in conversions  
 - **Revenue**: Total revenue generated from ad-driven conversions
 
-## 🏗️ **Simplified Architecture**
+## 🏗️ **Architecture**
 
 ```
 📱 Mobile/Web Apps → 📊 Kafka → 🔄 Flink → 💾 Iceberg → 📈 Superset
@@ -25,8 +25,8 @@ A simplified, real-time streaming pipeline for tracking advertising campaign per
 ## 📖 **Documentation**
 
 ### **Essential Guides**
-- **[Architecture Diagram](docs/architecture_diagram.md)**: Visual representation of the simplified system
-- **[Implementation Summary](docs/implementation_summary.md)**: Detailed breakdown of the simplified implementation
+- **[Architecture Diagram](docs/architecture_diagram.md)**: Visual representation of the system
+- **[Implementation Summary](docs/implementation_summary.md)**: Detailed breakdown of the implementation
 
 ### **Technical Concepts**
 - **[Flink & Iceberg Concepts](docs/flink_iceberg_concepts.md)**: Core concepts and best practices
@@ -70,7 +70,7 @@ ads-campaign-metric/
 
 ## 🎯 **Key Benefits**
 
-- **Simplified**: Single topic, basic processing, focused metrics
+- **Focused**: Single topic, basic processing, focused metrics
 - **Real-time**: Sub-second latency for campaign insights
 - **Scalable**: Easy to extend and modify
 - **Production-ready**: Proper error handling and monitoring
@@ -86,6 +86,6 @@ ads-campaign-metric/
 
 ---
 
-**Status**: ✅ **SIMPLIFIED & READY**  
+**Status**: ✅ **READY**  
 **Complexity**: 🟢 **MINIMAL**  
 **Value**: 🟢 **MAXIMUM** 

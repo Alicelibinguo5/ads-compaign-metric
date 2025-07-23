@@ -120,7 +120,7 @@ class IcebergSink:
     
     def create_all_tables(self, table_env) -> Dict[str, str]:
         """
-        Create simplified Iceberg tables for the pipeline.
+        Create Iceberg tables for the pipeline.
         
         Args:
             table_env: Flink table environment
@@ -128,7 +128,7 @@ class IcebergSink:
         Returns:
             Dictionary of table names
         """
-        logger.info("Creating simplified Iceberg tables...")
+        logger.info("Creating Iceberg tables...")
         
         self.create_enriched_events_table(table_env)
         self.create_campaign_metrics_table(table_env)

@@ -33,7 +33,7 @@ class TopicConfig:
 
 
 class KafkaTopics:
-    """Simplified Kafka topics for ads campaign metrics pipeline."""
+    """Kafka topics for ads campaign metrics pipeline."""
     
     # Single topic for all campaign events
     CAMPAIGN_EVENTS = TopicConfig(

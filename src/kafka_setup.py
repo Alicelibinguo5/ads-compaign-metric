@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simplified Kafka setup for ads campaign metrics.
+Kafka setup for ads campaign metrics.
 
 This module provides a minimal Kafka configuration with just one topic
 for all campaign events, making it easy to understand and maintain.
@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 
 class SimpleKafkaSetup:
-    """Simplified Kafka setup with minimal configuration."""
+    """Kafka setup with minimal configuration."""
     
     def __init__(self, bootstrap_servers: str = "localhost:9092"):
         """

@@ -1,10 +1,10 @@
-# Simplified Architecture: Ads Campaign Metrics Pipeline
+# Architecture: Ads Campaign Metrics Pipeline
 
 ## 🎯 **Focused System Overview**
 
-This simplified architecture focuses on the core essentials: **collect campaign events → process in real-time → store in data lake → visualize in dashboards**. No unnecessary complexity.
+This architecture focuses on the core essentials: **collect campaign events → process in real-time → store in data lake → visualize in dashboards**. No unnecessary complexity.
 
-## 📊 **Simplified Architecture Diagram**
+## 📊 ** Architecture Diagram**
 
 ```mermaid
 graph TB
@@ -53,7 +53,7 @@ graph TB
     SUPERSET --> DASH
 ```
 
-## 🔄 **Simplified Data Flow**
+## 🔄 **Data Flow**
 
 ```mermaid
 sequenceDiagram
@@ -93,7 +93,7 @@ sequenceDiagram
 - **One Dashboard**: Campaign performance overview
 - **Key Metrics**: CTR, CVR, revenue, impressions
 
-## 🚀 **Simplified Implementation**
+## 🚀 **Implementation**
 
 ### **1. Kafka Setup**
 ```yaml
@@ -149,7 +149,7 @@ CREATE TABLE campaign_metrics (
 | **Iceberg** | 1K writes/sec | < 1s |
 | **Superset** | 10 users | < 3s |
 
-## 🎯 **Benefits of Simplified Architecture**
+## 🎯 **Benefits of Architecture**
 
 ### **✅ Easier to Understand**
 - Clear data flow: App → Kafka → Flink → Iceberg → Superset
@@ -189,10 +189,10 @@ CREATE TABLE campaign_metrics (
 - **Docker Compose**: Local development
 - **Single configuration file**
 
-## 🚀 **Deployment (Simple)**
+## 🚀 **Deployment**
 
 ```yaml
-# docker-compose.yml (simplified)
+# docker-compose.yml
 services:
   kafka:
     image: confluentinc/cp-kafka:7.4.0
@@ -223,15 +223,15 @@ services:
 
 ---
 
-**Status**: ✅ **SIMPLIFIED & FOCUSED**  
+**Status**: ✅ **FOCUSED**  
 **Complexity**: 🟢 **MINIMAL**  
 **Value**: 🟢 **MAXIMUM** 
 
-## ✅ **Simplified Implementation Complete!**
+## ✅ **Implementation Complete!**
 
-I've successfully updated the original files to create a much simpler, focused implementation. Here's what was streamlined:
+I've successfully updated the original files to create a focused implementation. Here's what was streamlined:
 
-### 🎯 **Major Simplifications Made**
+### 🎯 **Major Changes Made**
 
 #### **1. Kafka Layer**
 - **Before**: 7 topics (campaign_events, user_behaviors, enriched_events, campaign_metrics, user_metrics, error_events, dead_letter_queue)
@@ -249,7 +249,7 @@ I've successfully updated the original files to create a much simpler, focused i
 - **Before**: Complex enrichment pipeline with user profiles
 - **After**: Simple linear flow: App → Kafka → Flink → Iceberg → Superset
 
-### 📊 **Simplified Architecture**
+### 📊 **Architecture**
 
 ```
 <code_block_to_apply_from>
@@ -259,18 +259,18 @@ I've successfully updated the original files to create a much simpler, focused i
 
 1. **`src/kafka/topics.py`** - Reduced to single topic
 2. **`src/kafka/producer.py`** - Removed user behavior methods
-3. **`src/kafka/consumer.py`** - Simplified to campaign events only
+3. **`src/kafka/consumer.py`** - Streamlined to campaign events only
 4. **`src/flink/streaming_pipeline.py`** - Removed complex enrichment
 5. **`src/flink/iceberg_sink.py`** - Reduced to 2 tables
 
 ### 🎯 **Ready for Use**
 
-The simplified implementation is now:
+The implementation is now:
 - **Easier to deploy and test**
 - **Faster to develop and debug**
 - **More maintainable and scalable**
 - **Focused on core campaign metrics**
 
-**The architecture is now much more focused and manageable while still providing the essential real-time campaign metrics functionality!** 
+**The architecture is now focused and manageable while still providing the essential real-time campaign metrics functionality!** 
 
-Would you like to proceed with **Item 6: Apache Superset dashboard implementation** using this simplified architecture? 
+Would you like to proceed with **Item 6: Apache Superset dashboard implementation** using this architecture? 
