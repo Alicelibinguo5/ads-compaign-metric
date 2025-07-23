@@ -25,11 +25,11 @@ A simplified, real-time streaming pipeline for tracking advertising campaign per
 ## 📖 **Documentation**
 
 ### **Essential Guides**
-- **[Architecture Diagram](architecture_diagram_simplified.md)**: Visual representation of the simplified system
-- **[Implementation Summary](simplified_implementation_summary.md)**: Detailed breakdown of the simplified implementation
+- **[Architecture Diagram](docs/architecture_diagram.md)**: Visual representation of the simplified system
+- **[Implementation Summary](docs/implementation_summary.md)**: Detailed breakdown of the simplified implementation
 
 ### **Technical Concepts**
-- **[Flink & Iceberg Concepts](flink_iceberg_concepts.md)**: Core concepts and best practices
+- **[Flink & Iceberg Concepts](docs/flink_iceberg_concepts.md)**: Core concepts and best practices
 
 ## 🚀 **Quick Start**
 
