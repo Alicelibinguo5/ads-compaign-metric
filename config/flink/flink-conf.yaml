@@ -1,0 +1,36 @@
+# Flink Configuration for Local Development
+
+# JobManager configuration
+jobmanager.rpc.address: flink-jobmanager
+jobmanager.rpc.port: 6123
+jobmanager.memory.process.size: 1600m
+
+# TaskManager configuration
+taskmanager.numberOfTaskSlots: 2
+taskmanager.memory.process.size: 1728m
+taskmanager.memory.managed.size: 128m
+
+# High availability
+high-availability: zookeeper
+high-availability.storageDir: hdfs://namenode:9000/flink/ha/
+high-availability.zookeeper.quorum: zookeeper:2181
+
+# Checkpointing
+state.backend: filesystem
+state.checkpoints.dir: hdfs://namenode:9000/flink/checkpoints
+state.savepoints.dir: hdfs://namenode:9000/flink/savepoints
+
+# Restart strategy
+restart-strategy: fixed-delay
+restart-strategy.fixed-delay.attempts: 3
+restart-strategy.fixed-delay.delay: 10s
+
+# Web UI
+rest.port: 8081
+rest.bind-port: 8081-8089
+
+# Logging
+env.java.opts: -Dlog.level=INFO
+
+# Classpath
+classpath.resolve-order: parent-first 
