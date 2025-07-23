@@ -179,6 +179,15 @@ tmp/
 .env.production
 .env.staging
 
+# AWS Credentials and Secrets
+*.pem
+*.key
+*secret*
+*credential*
+aws-credentials
+.aws/
+credentials
+
 # Database
 *.db
 *.sqlite

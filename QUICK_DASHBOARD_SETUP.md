@@ -25,7 +25,8 @@ pip install docker-compose
 # Check what's using port 8080
 lsof -i :8080
 
-# Stop conflicting service or modify docker-compose.yml
+# Kafka UI port changed to 8082 to avoid conflict
+# Access Kafka UI at: http://localhost:8082
 ```
 
 ## 🚀 **Quick Start (Fixed)**
@@ -89,7 +90,10 @@ docker compose logs postgres
 # Check what's using port 8080
 lsof -i :8080
 
-# Check what's using port 8088
+# Check what's using port 8082 (Kafka UI)
+lsof -i :8082
+
+# Check what's using port 8088 (Superset)
 lsof -i :8088
 ```
 

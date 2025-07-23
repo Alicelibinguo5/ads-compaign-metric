@@ -46,7 +46,7 @@ services:
     depends_on:
       - kafka
     ports:
-      - "8080:8080"
+      - "8082:8080"  # Changed from 8080 to 8082 to avoid conflict
     environment:
       KAFKA_CLUSTERS_0_NAME: local
       KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:29092
@@ -100,6 +100,7 @@ services:
       - "8088:8088"
     environment:
       SUPERSET_SECRET_KEY: your-secret-key-here
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/ads_campaign
       SUPERSET_CONFIG_PATH: /app/pythonpath/superset_config.py
     volumes:
       - ./config/superset:/app/pythonpath
@@ -107,13 +108,9 @@ services:
       - postgres
     command: >
       bash -c "
+        pip install psycopg2-binary &&
         superset db upgrade &&
-        superset fab create-admin
-          --username admin
-          --firstname Superset
-          --lastname Admin
-          --email admin@superset.com
-          --password admin &&
+        superset fab create-admin --username admin --firstname Superset --lastname Admin --email admin@superset.com --password admin &&
         superset init &&
         superset run -p 8088 --host 0.0.0.0
       "

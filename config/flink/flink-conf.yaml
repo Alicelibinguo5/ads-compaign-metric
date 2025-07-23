@@ -1,7 +1,7 @@
 # Flink Configuration for Local Development
 
 # JobManager configuration
-jobmanager.rpc.address: 30dbef5f3dac
+jobmanager.rpc.address: 6eed06b2d3b0
 jobmanager.rpc.port: 6123
 jobmanager.memory.process.size: 1600m
 
@@ -35,4 +35,8 @@ env.java.opts: -Dlog.level=INFO
 # Classpath
 classpath.resolve-order: parent-first blob.server.port: 6124
 query.server.port: 6125
+jobmanager.rpc.address: 6eed06b2d3b0
+blob.server.port: 6124
+jobmanager.rpc.address: 6eed06b2d3b0
 jobmanager.rpc.address:flink-jobmanager
+jobmanager.rpc.address:flink-jobmanager;taskmanager.numberOfTaskSlots:2
