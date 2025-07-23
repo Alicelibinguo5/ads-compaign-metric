@@ -2,7 +2,7 @@
 
 ## 🎯 **Project Overview**
 
-A simplified, real-time streaming pipeline for tracking advertising campaign performance metrics using Apache Kafka, Flink, and Iceberg.
+A real-time streaming pipeline for tracking advertising campaign performance metrics using Apache Kafka, Flink, and Iceberg.
 
 ## 📊 **Core Metrics**
 
@@ -78,7 +78,7 @@ ads-campaign-metric/
 
 ## 🎯 **Key Benefits**
 
-- **Simplified**: Two topics, basic processing, focused metrics
+- **Focused**: Two topics, basic processing, focused metrics
 - **Real-time**: Sub-second latency for campaign insights
 - **Scalable**: Easy to extend and modify
 - **Production-ready**: Proper error handling and monitoring with DLQ

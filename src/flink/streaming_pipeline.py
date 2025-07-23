@@ -339,9 +339,9 @@ class CampaignMetricsPipeline:
     
     def build_pipeline(self) -> None:
         """
-        Build the simplified streaming pipeline.
+        Build the streaming pipeline.
         """
-        logger.info("Building simplified Flink streaming pipeline...")
+        logger.info("Building Flink streaming pipeline...")
         
         # Create campaign events stream
         events_stream = self.create_campaign_events_stream()
@@ -353,7 +353,7 @@ class CampaignMetricsPipeline:
         self.write_to_iceberg(events_stream, "campaign_events")
         self.write_to_iceberg(metrics_stream, "campaign_metrics")
         
-        logger.info("Simplified pipeline built successfully")
+        logger.info("Pipeline built successfully")
     
     def _load_user_profiles(self, file_path: str) -> Dict[str, Dict[str, Any]]:
         """Load user profiles from file."""

@@ -20,7 +20,7 @@ class SimpleKafkaSetup:
     
     def __init__(self, bootstrap_servers: str = "localhost:9092"):
         """
-        Initialize simplified Kafka setup.
+        Initialize Kafka setup.
         
         Args:
             bootstrap_servers: Kafka broker addresses
@@ -102,7 +102,7 @@ class SimpleKafkaSetup:
 
 def main():
     """Main function to setup Kafka."""
-    print("🚀 Setting up Simplified Kafka")
+    print("🚀 Setting up Kafka")
     print("=" * 40)
     
     # Create Kafka setup
